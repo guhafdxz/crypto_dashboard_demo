@@ -6,8 +6,6 @@ Created on Tue Jun 13 22:42:41 2023
 """
 import streamlit as st
 import pandas as pd
-import requests
-from bs4 import BeautifulSoup
 
 
 upcoming_projects_df = pd.read_excel('./Upcoming_ICO.xlsx')
