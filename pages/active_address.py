@@ -8,5 +8,6 @@ st.set_page_config(
 )
 
 active_address=pd.read_excel('./pages/chain_daily_active_address.xlsx')
-
+active_address.index=active_address.iloc[:,0]
+active_address=active_address.iloc[:,1:]
 st.line_chart(active_address)
