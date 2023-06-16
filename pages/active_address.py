@@ -7,6 +7,6 @@ st.set_page_config(
     page_icon="",
 )
 
-active_address=pd.read_excel('./chain_daily_active_address.xlsx')
+active_address=pd.read_excel('./pages/chain_daily_active_address.xlsx')
 
 st.line_chart(active_address)
