@@ -8,10 +8,11 @@ import streamlit as st
 import pandas as pd
 
 
-upcoming_projects_df = pd.read_excel('./Upcoming_ICO.xlsx')
+
+upcoming_projects_df = pd.read_excel('Upcoming_ICO.xlsx')
 upcoming_projects_df['project_type']=upcoming_projects_df['project_type'].apply(lambda x:x[x.index('(')+1:x.index(')')]) 
-fundraising_projects_df=pd.read_excel('./fundraising_project_detail.xlsx')
-latest_event_df =pd.read_excel('./crypto_event_outline1686847458.xlsx')
+fundraising_projects_df=pd.read_excel('fundraising_project_detail.xlsx')
+latest_event_df =pd.read_excel('crypto_event_outline1686847458.xlsx')
 latest_event_df=latest_event_df.iloc[:,1:]
 st.title('This is a  :blue[crypto_dashboard] app demo :sunglasses:')
 tab1, tab2,tab3 = st.tabs(["upcoming_ico", "latest_coin_event",'Fundrasing_projects'])
