@@ -40,7 +40,7 @@ with tab4:
     st.dataframe(trending_coin_events_df)
 
 with tab5:   
-    st.header('potential event-coins :red[ranking])
+    st.header('potential event-coins :red[ranking]')
     st.dataframe(potential_coin_ranking)
               
 with tab6:   
