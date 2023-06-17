@@ -27,7 +27,7 @@ with tab1:
     st.header(':green[upcoming_ico] projects and details')
     st.dataframe(upcoming_projects_df)
 with tab2:   
-    st.header(':green[latest] coin event]')
+    st.header(':green[latest] coin event')
     st.dataframe(coin_event_df)
 with tab3:   
     st.header(':green[latest] fundraising projects and details')
