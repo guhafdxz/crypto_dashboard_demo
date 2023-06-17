@@ -19,7 +19,7 @@ upcoming_projects_df = pd.read_excel('./pages/Upcoming_ICO.xlsx')
 active_projects_df =  pd.read_excel('./pages/Active_ICO.xlsx')
 coin_event_df =pd.read_excel('./pages/coin_event_detail.xlsx')
 
-fundraising_projects_df=pd.read_excel('./pages/fundraising_project_detail.xlsx')
+fundraising_projects_df=pd.read_excel('./pages/fundraising_information.xlsx')
 st.title('This is a  :blue[crypto_dashboard] app demo :sunglasses:')
 tab1, tab2,tab3 = st.tabs(["upcoming_ico", "latest_coin_event",'Fundrasing_projects'])
 
